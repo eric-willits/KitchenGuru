@@ -1,0 +1,14 @@
+.page {
+    width: 100vw;
+    height: 100vh;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    width: 400px;
+    height: 400px;
+    background-color: #3F74FD;
+}

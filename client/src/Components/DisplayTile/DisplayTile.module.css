@@ -1,0 +1,41 @@
+.tile {
+    width: 150px;
+    height: 75px;
+    display: flex;
+    background-color: #E8E8E8;
+    margin-bottom: 25px;
+}
+
+.imageContainer,
+.textContainer{
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.label {
+    margin: 0;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button {
+    display: none;
+    width: 50%;
+    margin-left: 50%;
+} 
+
+.tile:hover button {
+    display: inline-block;
+}

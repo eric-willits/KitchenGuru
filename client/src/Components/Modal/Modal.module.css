@@ -1,0 +1,25 @@
+.label {
+    margin: 0;
+    max-height: 40px;
+    overflow-y: inherit;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(169, 169, 169, 0.25);
+}
+
+.modal {
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    overflow-y: scroll;
+}

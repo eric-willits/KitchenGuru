@@ -1,0 +1,33 @@
+.list {
+    width: 100%;
+    margin: 10px 0;
+    /* background-color: #efefef; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    /* box-shadow: 2px 2px 8px rgba(0,0,0,0.25); */
+
+}
+
+.content {
+    display: flex;
+    height: fit-content;
+}
+
+.text {
+    display: flex;
+}
+
+.name {
+    color: #545353;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin: 0 10px 20px 0;
+    display: inline-block;
+}
+
+.button {
+    width: fit-content;
+}

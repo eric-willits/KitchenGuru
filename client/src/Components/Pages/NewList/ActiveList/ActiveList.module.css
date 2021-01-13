@@ -1,0 +1,21 @@
+.activeListContainer {
+    width: 22%;
+    min-height: 100%;
+    background-color: #F0EFEF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.itemsContainer {
+    width: 100%;
+    min-height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}

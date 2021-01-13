@@ -1,0 +1,18 @@
+.listsContainer {
+    width: 90%;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    color: #545353;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 5%;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+

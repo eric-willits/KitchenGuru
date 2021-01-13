@@ -1,0 +1,55 @@
+.navbar {
+    background-color: #273478;
+    width: 20%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    color: #CECECE;
+}
+
+.image {
+    width: 60%;
+}
+
+.username {
+    color: #979696;
+    font-weight: 300;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.navbarItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+.navbarItem a{
+    color: #3F74FD;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #3F74FD;
+    color: #979696 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+.signout {
+    position: absolute;
+    bottom: 0;
+}
