@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://eric:eric123@ilcuoco.hqw2t.mongodb.net/ilcuoco?retryWrites=true&w=majority",
+    "jwtSecret": "ilcuoco"
+}

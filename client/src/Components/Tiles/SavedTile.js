@@ -17,7 +17,7 @@ class SavedTile extends Component {
                     />
                 </div>
                 <div className={styles.buttons}>
-                    <button onClick={() => this.props.unsave(this.props.recipe.label)}>&#10005;</button>
+                    <button onClick={() => this.props.unsave(this.props.recipe.label)} className={styles.button}>&#10005;</button>
                 </div>
             </div>
         )

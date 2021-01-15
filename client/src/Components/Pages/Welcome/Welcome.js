@@ -40,26 +40,18 @@ class Welcome extends Component {
         return(
             <div className={styles.page}>
                 <div className={styles.formContainer}>
-                    <form onSubmit={(e) => this.register(e)}>
-                        <h4>Register</h4>
-                        <label>
-                            <input type="text" placeholder="username" onChange={(event) => this.onChange(event, "registerUsername")}/>Username
-                        </label>
-                        <label>
-                            <input type="password" placeholder="password" onChange={(event) => this.onChange(event, "registerPassword")}/>Password
-                        </label>
-                        <button type="submit">Submit</button>
+                    <form onSubmit={(e) => this.register(e)} className={styles.form}>
+                        <h4 className={styles.header}>Register</h4>
+                            <input type="text" placeholder="username" onChange={(event) => this.onChange(event, "registerUsername")} className={styles.input}/>
+                            <input type="password" placeholder="password" onChange={(event) => this.onChange(event, "registerPassword")} className={styles.input}/>
+                        <button type="submit" className={styles.button}>Submit</button>
                     </form>
 
-                    <form onSubmit={(e) => this.login(e)}>
-                        <h4>Login</h4>
-                        <label>
-                            <input type="text" placeholder="username" onChange={(event) => this.onChange(event, "loginUsername")}/>Username
-                        </label>
-                        <label>
-                            <input type="password" placeholder="password" onChange={(event) => this.onChange(event, "loginPassword")}/>Password
-                        </label>
-                        <button type="submit">Submit</button>
+                    <form onSubmit={(e) => this.login(e)} className={styles.form}>
+                        <h4 className={styles.header}>Login</h4>
+                            <input type="text" placeholder="username" onChange={(event) => this.onChange(event, "loginUsername")} className={styles.input}/>
+                            <input type="password" placeholder="password" onChange={(event) => this.onChange(event, "loginPassword")} className={styles.input}/>
+                        <button type="submit" className={styles.button}>Submit</button>
                     </form>
                 </div>
             </div>

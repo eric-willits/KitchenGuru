@@ -16,7 +16,7 @@ class ListTile extends Component {
     
     render() {
         const saved = <button disabled>&hearts;</button>;
-        const unsaved = <button onClick={() => this.props.favorite(this.props.recipe)}>&hearts;</button>;
+        const unsaved = <button onClick={() => this.props.favorite(this.props.recipe)} className={styles.button}>&hearts;</button>;
 
         return (
             <div className={styles.tile}>

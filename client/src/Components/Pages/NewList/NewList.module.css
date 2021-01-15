@@ -42,5 +42,15 @@
     padding-left: 10px;
     margin-right: 15px;
     color: #545353;
+}
 
+.button {
+    border: 1px solid #273478;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0);
+    color:#273478;
+}
+
+.button:hover{
+    cursor: pointer;
 }

@@ -1,5 +1,2 @@
 node_modules
-config
 client/node_modules
-client/.eslintcache
-client/public

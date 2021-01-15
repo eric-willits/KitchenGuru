@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const config = require("config");
-
+const path = require("path");
 
 //Require Routes
 const auth = require("./routes/api/auth");
@@ -31,6 +31,16 @@ app.use("/api/auth", auth);
 app.use("/api/lists", lists);
 app.use("/api/saved", saved);
 app.use("/api/favorites", favorites);
+
+//Serve static assets if in production
+if(process.env.NODE_ENV === 'production') {
+    //Set static folder
+    app.use(express.static('client/build'));
+
+    app.use('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+}
 
 const port = process.env.PORT || 5000;
 

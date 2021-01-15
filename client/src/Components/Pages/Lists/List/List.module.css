@@ -30,4 +30,13 @@
 
 .button {
     width: fit-content;
+    border: 1px solid #ff6e54;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0);
+    color:#ff6e54;
+    margin-left: 100%;
+}
+
+.button:hover{
+    cursor: pointer;
 }

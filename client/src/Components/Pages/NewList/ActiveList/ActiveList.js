@@ -29,7 +29,7 @@ class ActiveList extends Component{
                 <div className={styles.itemsContainer}>
                     {this.props.activeList ? activeListArray : " "}
                 </div>
-                <button onClick={this.saveList}>Save List</button>
+                <button onClick={this.saveList} className={styles.button}>Save List</button>
             </div>
         )
     }

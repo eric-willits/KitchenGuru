@@ -19,3 +19,14 @@
     align-items: center;
     overflow-y: scroll;
 }
+
+.button {
+    border: 1px solid #273478;
+    border-radius: 2px;
+    background-color: none;
+    color:#273478;
+}
+
+.button:hover{
+    cursor: pointer;
+}

@@ -40,7 +40,7 @@ class NewList extends Component {
               <div className={styles.searchResults}>
                 <form onSubmit={this.sendRequest} className={styles.form}>
                   <input type="text" name="search" placeholder="search for a recipe" onChange={this.onChangeSearch} className={styles.searchInput}/>
-                  <button type="submit">Submit</button>
+                  <button type="submit" className={styles.button}>Submit</button>
                 </form>
                 <Results results={this.state.results}/>
               </div>

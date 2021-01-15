@@ -10,7 +10,7 @@ class NavBar extends Component {
     render(){
         return(
             <div className={styles.navbar}>
-                <h1 className={styles.header}>il cuoco</h1>
+                <h1 className={styles.header}>kitchen guru</h1>
                 <div className={styles.userTile}>
                     <img src={UserIcon} alt="profile" className={styles.image}/>
                     <h4 className={styles.username}>{this.props.user.username}</h4>
