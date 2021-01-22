@@ -6,14 +6,19 @@
     flex-direction: column;
     border-radius: 20px;
     box-sizing: border-box;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     /* box-shadow: 2px 2px 8px rgba(0,0,0,0.25); */
-
 }
 
 .content {
     display: flex;
     height: fit-content;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.tileItem {
+    flex: 1 0 21%;
 }
 
 .text {

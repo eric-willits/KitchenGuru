@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 
 import UserIcon from '../../../images/profile.png';
+import Sidebar from '../Sidebar/Sidebar';
 import styles from './NavBar.module.css';
 import * as actions from '../../../store/actions';
 
 class NavBar extends Component {
+    onLogout = () => {
+        this.props.history.push("/");
+        this.props.logout();
+    }
+    
     render(){
         return(
             <div className={styles.navbar}>
+                <div className={styles.sidebar}>
+                    <Sidebar />
+                </div>
                 <h1 className={styles.header}>kitchen guru</h1>
                 <div className={styles.userTile}>
                     <img src={UserIcon} alt="profile" className={styles.image}/>
@@ -20,10 +30,8 @@ class NavBar extends Component {
                     <li className={styles.navbarItem}><NavLink to="/lists" activeClassName={styles.active}>My Lists</NavLink></li>
                     <li className={styles.navbarItem}><NavLink to="/favorites" activeClassName={styles.active}>Favorites</NavLink></li>
                     <li className={styles.navbarItem}><NavLink to="/saved" activeClassName={styles.active}>Saved for Later</NavLink></li>
-                    <li className={[styles.navbarItem, styles.signout].join(" ")}><NavLink to="#" onClick={this.props.logout}>signout</NavLink></li>
-
+                    <li className={[styles.navbarItem, styles.signout].join(" ")}><NavLink to="#" onClick={this.onLogout}>signout</NavLink></li>
                 </ul>
-                
             </div>
         )
     }
@@ -41,4 +49,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(NavBar));

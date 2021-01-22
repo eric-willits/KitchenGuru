@@ -7,6 +7,10 @@
     left: 0;
 }
 
+.sidebar {
+    display: none;
+}
+
 .header {
     color: #CECECE;
     font-size: 28px;
@@ -20,6 +24,7 @@
 .username {
     color: #979696;
     font-weight: 300;
+    margin: 0;
 }
 
 .list {
@@ -54,4 +59,36 @@
 .signout {
     position: absolute;
     bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .userTile {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .username {
+        font-size: 12px;
+    }
+
 }

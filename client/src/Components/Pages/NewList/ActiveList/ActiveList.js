@@ -15,7 +15,6 @@ class ActiveList extends Component{
         this.props.addList(list);
         this.props.clearList();
         this.props.history.push("/lists");
-
     }
     
     render(){
@@ -46,6 +45,6 @@ const mapDispatchToProps = dispatch => {
       addList: (list) => dispatch(actions.addList(list)),
       clearList: () => dispatch(actions.clearList())
     }
-  }
+}
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ActiveList));

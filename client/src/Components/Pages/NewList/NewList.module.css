@@ -2,6 +2,14 @@
     text-align: left;
 }
 
+.listHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 .content {
     padding: 0 2.5%;
     display: flex;
@@ -10,7 +18,7 @@
 }
 
 .searchResults {
-    background-color: #F0EFEF;
+    background-color: #F0EFEF; 
     width: 75%;
     padding-top: 15px;
     border-radius: 15px;
@@ -53,4 +61,11 @@
 
 .button:hover{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .searchResults{
+        width: 100%;
+        height: auto;
+    }
 }

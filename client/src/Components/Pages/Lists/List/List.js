@@ -8,7 +8,7 @@ import styles from './List.module.css';
 
 class List extends Component {
     render(){
-        let recipeTiles = this.props.list.recipes.map(recipe => <ListTile recipe={recipe}/>)
+        let recipeTiles = this.props.list.recipes.map(recipe => <ListTile recipe={recipe} className={styles.tileItem}/>)
         let allIngredients = this.props.list.recipes.map(recipe => recipe.ingredientLines);
         let mergedIngredients = [].concat.apply([], allIngredients);
         

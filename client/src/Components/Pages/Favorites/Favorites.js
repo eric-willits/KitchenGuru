@@ -18,6 +18,14 @@ class Favorites extends Component {
                 <h3 className={styles.header}>Favorites</h3>
                 <div className={styles.container}>
                     {favorites}
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
                 </div>
             </div>
         )

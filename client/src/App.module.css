@@ -11,3 +11,12 @@
     overflow-y: scroll;
     background-color: #C4C4C4;
 }
+
+@media only screen and (max-width: 600px) {
+    .pages {
+        top: 20vh;
+        left: 0;
+        width: 100vw;
+        height: 80vh;
+    }
+}

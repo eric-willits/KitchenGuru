@@ -18,6 +18,14 @@ class Saved extends Component {
                 <h3 className={styles.header}>Saved for Later</h3>
                 <div className={styles.container}>
                     {saved}
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
+                    <i aria-hidden="true"></i>
                 </div>
             </div>
         )

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'; */
+import CartModal from '../../CartModal/CartModal';
 
 import Results from "./Results/Results";
 import ActiveList from './ActiveList/ActiveList';
@@ -35,7 +38,10 @@ class NewList extends Component {
     
         return (
           <div className={styles.newList}>
-            <input type="text" name="name" placeholder="list name" onChange={this.onChangeName} className={styles.nameInput}/>
+            <div className={styles.listHeader}>
+              <input type="text" name="name" placeholder="list name" onChange={this.onChangeName} className={styles.nameInput}/>
+              <CartModal />
+            </div>
             <div className={styles.content}>
               <div className={styles.searchResults}>
                 <form onSubmit={this.sendRequest} className={styles.form}>

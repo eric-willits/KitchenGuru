@@ -38,8 +38,8 @@ class Tile extends Component {
                     />
                 </div>
                 <div className={styles.buttons}>
-                    <button onClick={() => this.props.saveRecipe(this.props.recipe)}>Archive</button>
-                    <button onClick={this.onClick}>Add</button>
+                    <button onClick={() => this.props.saveRecipe(this.props.recipe)} className={styles.button}>Archive</button>
+                    <button onClick={this.onClick} className={styles.button}>Add</button>
                 </div>
             </div>
         )

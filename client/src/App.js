@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { store } from './index';
 import { loadUser } from './store/actions/auth';
@@ -28,6 +28,7 @@ class App extends Component {
             <Route path="/lists" component={Lists}/>
             <Route path="/favorites" component={Favorites}/>
             <Route path="/saved" component={Saved}/>
+            <Redirect from="/" to="/lists"/>
           </Switch>
         </div>
       </div>
